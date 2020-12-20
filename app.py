@@ -223,7 +223,7 @@ guess_limit = 3
 #        for z in range(2):
 #            print(f"({x} , {y} , {z})")
 
-# Chanllenge 1:51:30
+# Chanllenge
 #numbers = [5,2,5,2,2]
 #for x in numbers:
 #    print("x" * x) #this line is the easy way -- next lines are for hard way but nested for way
@@ -232,4 +232,35 @@ guess_limit = 3
 #        out += "x"
 #    print(out)
 
-# Lists 1:56:00
+# Lists
+#name = ["Bob", "Mosh", "Ali", "Sara", "Jafar"]
+#name[0] = "Jon" # modify an item in list
+#print(name[1]) # prints Mosh
+#print(name[-1]) # prints Jafar
+#print(name[2:]) # prints ['Ali', 'Sara', 'Jafar']
+#print(name[1:4]) # prints ['Mosh', 'Ali', 'Sara'] -- like strings 4 is not counted
+#print(name[2:-1]) # prints ['Ali', 'Sara']
+#print(name[:]) # prints all items
+# Example : finding the largest number in a list
+#numbs = [14, 5, 6, 12, 3, 18, 9]
+#maxnum = numbs[0]
+#for x in numbs:
+#    if maxnum < x:
+#        maxnum = x
+#print(maxnum)
+
+# 2D Lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+#matrix[0][1] = 55 # modify an item
+#print(matrix[0][2]) # prints 3
+#print(matrix[1][0:2]) # prints [4, 5]
+#print(matrix[2][-2]) # prints 8
+#for row in matrix:
+#    for item in row:
+#        print(item) # prints every item from 1 to 9
+
+# List Methods 2:06
