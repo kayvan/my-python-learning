@@ -263,4 +263,78 @@ guess_limit = 3
 #    for item in row:
 #        print(item) # prints every item from 1 to 9
 
-# List Methods 2:06
+# List Methods
+#numbers = [5, 3, 2, 0, 6, 1, 5, 7, 4]
+#numbers.append(20) # append to the end of list
+#numbers.insert(2, 10) # insert the value 10 in index 2
+#numbers.remove(1) # removes value 1
+#numbers.clear() # removes all of list
+#numbers.pop() # removes the last value
+#print(numbers.index(1)) # returns the index of value 1
+#print(5 in numbers) # check if there is the value in list - yes=True ,,, no=False
+#print(numbers.count(5)) # returns the repetition of value 5 -- here we have value 5 twice, so it returns 2
+#numbers.sort() # sort the list Ascending
+#numbers.reverse() # make our list reverse -- with sort it shows revers sort (descending)
+#number2 = numbers.copy() # make a copy of our list
+# Exercise: remove the duplicates in a list
+#numbers = [5, 3, 2, 0, 6, 1, 5, 7, 4, 4, 4]
+#uniques = []
+#for item in numbers:
+#    if item not in uniques:
+#        uniques.append(item)
+#print(uniques)
+
+# Toples : like lists but we can't modify it or mute it
+#numbs = (1, 3, 2, 6) # in tuple we use parenthesis
+#print(numbs[1]) # returns the value in index 1
+#print(numbs.count(3)) # returns the count of value 3
+#print(numbs.index(6)) # returns the index of value 6
+
+# Unpacking
+#numbs = (1, 2, 3) # no matter if it's a list or tuple
+#x, y, z = numbs # unpacking our list in 3 variables
+#print(x)
+#print(y)
+#print(z)
+
+# Dictionaries
+#customer = {
+#    "name" : "John Smith",
+#    "age" : 30,
+#    "is_verified" : True
+#}
+#print(customer["name"])
+#customer["name"] = "Jack Baily" # modify the name
+#print(customer.get("name")) # same as first print without any error
+#customer["birthdate"] = "Jan 1 1988" # adding a new key-value
+#print(customer["birthdate"])
+# Exercise : print digits in words
+#digits = input("Digits: ")
+#digits_mapping = {
+#    "1" : "One",
+#    "2" : "Two",
+#    "3" : "Three",
+#    "4" : "Four",
+#    "5" : "Five"
+#}
+#output = ""
+#for digit in digits:
+#    print(digits_mapping[digit]) # this print mode returns errors for unknown digits
+#    output += digits_mapping.get(digit, "!!") + " "
+#print(output)
+
+# Emoji Converter
+#message = input("> ")
+#words = message.split(' ') # make a list from our message string with space splitter
+#emojies = {
+#    ":)": "😊",
+#    ":(": "😞"
+#} # our imoji dictionary -- imoji in windows 10 --> (win + .)
+#output = "" # empty string
+#for word in words:
+#    output += emojies.get(word, word) + " " # first word looks in dic and if there isn't any ting there, second word adds same word from list to output
+#print(output)
+
+# Functions 2:30:42
+
+
