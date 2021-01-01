@@ -335,6 +335,43 @@ guess_limit = 3
 #    output += emojies.get(word, word) + " " # first word looks in dic and if there isn't any ting there, second word adds same word from list to output
 #print(output)
 
-# Functions 2:30:42
+# Functions
+#def greet_user():
+#    print("Hi there!")
+#    print("Welcome aboard.")    # we define our function for printing 2 lines -- after defining functions we need 2 empty lines
+#
+#
+#print("Start")
+#greet_user() # using our func to print the greeting messages
+#print("Finish")
 
+# Parameters in Functions
+#def greet_user(name):
+#    print(f"Hi {name}!")
+#    print("Welcome aboard.")    # we define our function with name parameter for printing greeting lines
+#
+#
+#print("Start")
+#greet_user("John") # using our func + parameter to print the greeting messages
+#print("Finish")
+# with 2 parameters
+#def greet_user(name, last):
+#    print(f"Hi {name} {last}!")
+#    print("Welcome aboard.")    # we define our function with 2 parameters for printing greeting lines
+#
+#
+#print("Start")
+#greet_user("John", "Smith") # using our func + parameters to print the greeting messages
+#print("Finish")
 
+# Keyword Arguments
+#def greet_user(name, last):
+#    print(f"Hi {name} {last}!")
+#    print("Welcome aboard.")    # we define our function with 2 parameters for printing greeting lines
+#
+#
+#print("Start")
+#greet_user(last="Smith", name="John") # using our func + keywords for positional parameters  to print the greeting messages
+#print("Finish")
+
+# Return Statement 2:45:05
