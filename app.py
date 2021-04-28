@@ -371,7 +371,98 @@ guess_limit = 3
 #
 #
 #print("Start")
-#greet_user(last="Smith", name="John") # using our func + keywords for positional parameters  to print the greeting messages
+#greet_user(last="Smith", name="John") # using our func + keywords for positional parameters to print the greeting messages
 #print("Finish")
 
-# Return Statement 2:45:05
+# Return Statement
+#def square(number):
+#    return number*number
+#
+#
+#numb = int(input('Please enter your number: ')) # get a number
+#sqr = square(numb) # make a square of our number
+#print("your number's square:", sqr)
+
+# Creating a Reusable Function (we use our emoji dictionary and make it as a function)
+#def emoji_converter(message):
+#    words = message.split(' ') # make a list from our message string with space splitter
+#    emojies = {
+#        ":)": "😊",
+#        ":(": "😞"
+#    } # our imoji dictionary -- imoji in windows 10 --> (win + .)
+#    output = "" # empty string
+#    for word in words:
+#        output += emojies.get(word, word) + " " # first word looks in dic and if there isn't any ting there, second word adds same word from list to output
+#    return output
+#
+#
+#msg = emoji_converter(input("> "))
+#print(msg)
+
+# Exeptions (don't let program crash and return an error that we wrote it)
+#try:
+#    age = int(input("Age: "))
+#    income = 2000
+#    risk = income/age
+#    print(age)
+#except ValueError:
+#    print('Invalid Value!!!') # when user enter an invalid value like "abcd" or "21a"
+#except ZeroDivisionError:
+#    print("Age can not be Zero!!!") # because of division in risk variable if age is 0 then program will crash
+
+# Comments
+# We write comments to explain why
+
+# Classes
+#class Point: # we use classes to create types -- we define methodes and functions in classes
+#    def move(self):
+#        print("move")
+#
+#    def draw(self):
+#        print("draw")
+#
+#
+#point1 = Point() # make an object
+#point1.x = 10  # make an object for class with atribute
+#point1.y = 20
+#print(point1.x)
+#point1.draw()
+#point1.move()
+#
+#point2 = Point() # make an other object with class that has nothing to do with first one
+#point2.x = 15
+#print(point2.x)
+
+# Constructors
+#class Point:
+#    def __init__(self, x, y): # defining our cunstructor
+#        self.x = x
+#        self.y = y
+#
+#    def move(self):
+#        print("move")
+#
+#    def draw(self):
+#        print("draw")
+#
+#
+#point1 = Point(10, 20)
+#print(point1.y)
+#print(point1.x)
+
+# Exercise (a type named person with name attribute and talk method)
+#class Person:
+#    def __init__(self, name):
+#        self.name = name
+#    def talk(self):
+#        print(f"Hi. I am {self.name}.")
+#
+#
+#john = Person("John Smith")
+#john.talk()
+#bob = Person("Bob Davis")
+#bob.talk()
+
+# Inheritance 03:14:52
+
+
