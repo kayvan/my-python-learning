@@ -464,5 +464,39 @@ guess_limit = 3
 #bob.talk()
 
 # Inheritance 03:14:52
+#class Mammal: # our main class or parent class
+#    def walk(self):
+#        print("walk")
+#
+#
+#class Dog(Mammal): # inherits all methods in parent class
+#    def bark(self):
+#        print("bark")
+#
+#
+#class Cat(Mammal):
+#    pass        # it's doing nothing just to avoid empty class warnings
+#
+#
+#dog1 = Dog()
+#dog1.walk()
+#dog1.bark() # this bark method is available just for Dog class not Cat class
+#cat1 = Cat()
+#cat1.walk()
+
+# Modules (for example we make a converters.py file and we write some codes there)
+#import converters
+#print(converters.lbs_to_kg(10))
+#print(converters.kg_to_lbs(75))
+#from converters import kg_to_lbs
+#print(kg_to_lbs(40))
+
+# Exercise finding max number in a list in utils module
+#from utils import find_max
+#numbers = [10, 2, 3, 1, 112, 6]
+#mx = find_max(numbers)
+#print(mx) # in python there is a build-in function named max does the same job as our function in module -- print(max(numbers))
+
+# Packages 3:30:25
 
 
