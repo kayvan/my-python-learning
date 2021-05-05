@@ -488,15 +488,62 @@ guess_limit = 3
 #import converters
 #print(converters.lbs_to_kg(10))
 #print(converters.kg_to_lbs(75))
-#from converters import kg_to_lbs
+#from converters import kg_to_lbs # importing a specific function from module -- in this case we can write it without object name
 #print(kg_to_lbs(40))
 
 # Exercise finding max number in a list in utils module
 #from utils import find_max
 #numbers = [10, 2, 3, 1, 112, 6]
 #mx = find_max(numbers)
-#print(mx) # in python there is a build-in function named max does the same job as our function in module -- print(max(numbers))
+#print(mx) # in python there is a built-in function named max does the same job as our function in module -- print(max(numbers))
 
-# Packages 3:30:25
+# Packages --- directories contain modules for instance our ecommerce package
+#we add a package by right click on our project name an choosing new and at the end: either "python package" or "directory and we make a python file named __init__.py in this directory"
+#import ecommerce.shipping # importing the whole module from a package
+#ecommerce.shipping.calc_shipping()
+#from ecommerce import shipping # importing the whole module from a package but the next commands are not too long
+#shipping.calc_shipping()
+#shipping.calc_tax()
+#from ecommerce.shipping import calc_shipping # importing just 1 function from our module in package
+#calc_shipping()
+#from ecommerce.shipping import calc_shipping, calc_tax # importing just multiple functions from our module in package
+#calc_tax()
+#calc_shipping()
 
+# Generating Random Values
+#import random
+#for i in range(4):
+#    print(random.random()) # generating random value between 0 and 1
+#for j in range(3):
+#    print(random.randint(8, 17)) # generating random integer value between 8 and 17
+# Example - pick someone from a list as a leader
+#import random
+#members = ['Anna', 'John', 'Ali', 'Maria', 'David', 'Akbar']
+#leader = random.choice(members)
+#print(leader)
+
+# Exercise Dice class with roll method
+#import random
+#class Dice:
+#    def roll(self):
+#        x = random.randint(1, 6)
+#        y = random.randint(1, 6)
+#        return x, y
+#
+#
+#dice = Dice()
+#print(dice.roll())
+
+# Files and Directories 3:44:51
+#from pathlib import Path
+#path = Path("ecommerce") # this path means project path and ecommerce directory
+#print(path.exists()) # existance checking by returning true or false
+#path1 = Path("emails")
+#path1.mkdir() # making a directory
+#path1.rmdir() # removing a directory
+#path4 = Path() # when we write nothing in path it means project path.
+#for file in path4.glob("*.py"): # glob is for finding directories and files -- to show directories: just one star or asterisk
+#    print(file)
+
+# Pypi and Pip 3:51:02
 
