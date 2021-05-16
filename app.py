@@ -545,5 +545,11 @@ guess_limit = 3
 #for file in path4.glob("*.py"): # glob is for finding directories and files -- to show directories: just one star or asterisk
 #    print(file)
 
-# Pypi and Pip 3:51:02
+# Pypi and Pip
+# PyPI: Python Package Index https://pypi.org/ is a community full of python libraries and packages that are from other users written und published
+# We should not write every package and can use this packages from this community by installing them
+# We install this libraries or packages with command "pip" in python TERMINAL, for instance "pip install openpyxl", this package is usefull for working with excel files
+# We can find what we install in project tree under "External Libraries -> Python 3.9 -> site-packages
+
+# First Project: Excel Spreadsheets 3:56:13
 
