@@ -15,7 +15,7 @@
 #color = input("What color do you like? ")
 #print(name + " likes " + color)
 
-## Type Conversion
+# Type Conversion
 #birth_year = input("Birth year: ") # inputs are always string and to use as int or other types should be converted
 #print(type(birth_year)) # see var type
 #age = 2020 - int(birth_year) # converting by int() or float() or bool()
@@ -534,7 +534,7 @@ guess_limit = 3
 #dice = Dice()
 #print(dice.roll())
 
-# Files and Directories 3:44:51
+# Files and Directories
 #from pathlib import Path
 #path = Path("ecommerce") # this path means project path and ecommerce directory
 #print(path.exists()) # existance checking by returning true or false
@@ -551,5 +551,58 @@ guess_limit = 3
 # We install this libraries or packages with command "pip" in python TERMINAL, for instance "pip install openpyxl", this package is usefull for working with excel files
 # We can find what we install in project tree under "External Libraries -> Python 3.9 -> site-packages
 
-# First Project: Excel Spreadsheets 3:56:13
+# First Project: Excel Spreadsheets -- 10% discount on prices
+# First of all we copy a file named transactions.xlsx in project directory to work on it(10% discount on prices)
+#import openpyxl as xl # we import our package and give it an alias "xl" to make it shorter
+#from openpyxl.chart import BarChart, Reference # for draw a chart we need these 2 classes
+#wb = xl.load_workbook("transactions.xlsx") # import our excel file
+#sheet = wb["Sheet1"] # which sheet we want to work on it (case sensitive)
+#cell = sheet["a1"] # test - there are 2 ways to refere to a cell this way or the way in next line
+#cell = sheet.cell(1, 1) # test
+#print(cell.value) # test print
+#for row in range(2, sheet.max_row + 1): # from which line to which line
+#    cell = sheet.cell(row, 3) # every row but column 3 cuz our prices are in column 3
+#    corrected_price = cell.value * 0.9 # 10% discount on prices
+#    corrected_price_cell = sheet.cell(row, 4) # going to column 4 to avoid overwriting
+#    corrected_price_cell.value = corrected_price # importing new values in new cells
+#
+#values = Reference (sheet, # for a chart we need values and the reference of values in which sheet, which rows and which columns
+#                    min_row=2,
+#                    max_row=sheet.max_row,
+#                    min_col=4,
+#                    max_col=4)
+#chart = BarChart() # calling our BarChart class in an object
+#chart.add_data(values) # giving the values to our class
+#sheet.add_chart(chart, "e2") # addig the chart draw in our sheet and from e2 cell
+#wb.save("transactions2.xlsx") # save our changes in a new file to avoid overwriting
+
+# we rewrite our codes again cleaner and in a function to use it for several excel files not only one file named transactions.xlsx (here we overwrite the file)
+#import openpyxl as xl # we import our package and give it an alias "xl" to make it shorter
+#from openpyxl.chart import BarChart, Reference
+#
+#
+#def process_workbook(filename):
+#    wb = xl.load_workbook(filename)
+#    sheet = wb["Sheet1"]
+#
+#
+#    for row in range(2, sheet.max_row + 1):
+#        cell = sheet.cell(row, 3)
+#        corrected_price = cell.value * 0.9
+#        corrected_price_cell = sheet.cell(row, 4)
+#        corrected_price_cell.value = corrected_price
+#
+#    values = Reference(sheet,
+#                       min_row=2,
+#                       max_row=sheet.max_row,
+#                       min_col=4,
+#                       max_col=4)
+#    chart = BarChart()
+#    chart.add_data(values)
+#    sheet.add_chart(chart, "e2")
+#    wb.save(filename)
+
+# Machine Learning in Action 4:13:05
+
+
 
